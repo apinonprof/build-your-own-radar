@@ -1,8 +1,9 @@
 const path = require('path')
 const fs = require('fs')
 
-module.exports = async function (context, req) {
-  const filePath = path.join(__dirname, '/src/index.html')
+// eslint-disable-next-line no-unused-vars
+module.exports = async function (context, _req) {
+  const filePath = path.join(__dirname, 'index.html')
 
   try {
     const html = fs.readFileSync(filePath, 'utf8')
