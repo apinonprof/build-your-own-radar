@@ -2,7 +2,7 @@ const path = require('path')
 const fs = require('fs')
 
 module.exports = async function (context, req) {
-  const filePath = path.join(__dirname, '../../src/index.html')
+  const filePath = path.join(__dirname, '/src/index.html')
 
   try {
     const html = fs.readFileSync(filePath, 'utf8')
